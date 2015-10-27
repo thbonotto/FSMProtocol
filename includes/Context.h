@@ -1,14 +1,15 @@
+#pragma once
 // A classe Context é a parte visível da MEF
 #include "Events.h"
-#include "State.h"
+#include "States.h"
 
 class Context {
  protected:
   State * estado;
  public:
   Context(State * inicio) : estado(inicio) {}
- 
-  virtual ~Context() {}
+
+   virtual ~Context() {}
  
   void Request(Event & e) {
     State * novo = estado->handle(e);
