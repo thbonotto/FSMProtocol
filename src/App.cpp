@@ -1,8 +1,7 @@
 #include "Context.h"
-#include "Events.h"
 
 int main(){
-	Context c;
+	Context c{nullptr};
 	Event e;	
 	c.Request(e);
 }
