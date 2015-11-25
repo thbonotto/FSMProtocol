@@ -1,0 +1,8 @@
+LOGIN_REQ, LOGIN_RESP, LOGOUT_REQ, LOGOUT_RESP: entrada e saída do sistema
+JOIN_REQ, JOIN_RESP: entrada em partida do jogo, ou início de partida do jogo
+LEAVE_REQ, LEAVE_RESP: saída de partida do jogo
+LIST_REQ, LIST_RESP: lista partidas do jogo (se não tiver entrada em uma delas ainda), ou lista jogadores da partida em que entrou
+SETMODE_REQ, SETMODE_RESP: muda modo do jogador
+DATA, ACK: envio de mensagem direta para um jogador, para o controlador do jogo, ou para um grupo de jogadores
+SUBSCRIBE, UNSUBSCRIBE: assina ou cancela o interesse em um evento
+NOTIFY: publica um evento 
