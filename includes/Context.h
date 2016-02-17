@@ -2,7 +2,7 @@
 
 // A classe Context é a parte visível da MEF
 #include <States.h>
-#include "Events.h"
+#include "Event.h"
 
 class Context {
  protected:
@@ -12,7 +12,7 @@ class Context {
  
   virtual ~Context() {}
  
-  void Request(Event & e) {
+  void Request(const Event & e) {
     State * novo = estado->handle(e);
  
     if (novo) {

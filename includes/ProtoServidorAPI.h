@@ -11,10 +11,7 @@
 #include<string>
 
 using namespace std;
-struct Par {
-  string atributo;
-  string valor;
-};
+
 // Classe abstrata que serve de base para a implementação de um jogo ...
 // Ela serve para implementar as operações do jogo do ponto de vista do protocolo
 class Jogo {

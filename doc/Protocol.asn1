@@ -6,3 +6,28 @@ SETMODE_REQ, SETMODE_RESP: muda modo do jogador
 DATA, ACK: envio de mensagem direta para um jogador, para o controlador do jogo, ou para um grupo de jogadores
 SUBSCRIBE, UNSUBSCRIBE: assina ou cancela o interesse em um evento
 NOTIFY: publica um evento 
+
+Module-Jogo DEFINITIONS AUTOMATIC TAGS ::=
+BEGIN
+
+Tipos ::= ENUMERATED {loginreq, loginresp, joinreq, joinresp}
+
+Mensagem ::= SEQUENCE {
+	tipo Tipos,
+	payload CHOICE {
+	  loginReq LOGINREQ,
+	  loginResp LOGINRESP
+	}
+}
+
+LOGINREQ ::= SEQUENCE {
+  nome PrintableString (SIZE(16)),
+  senha PrintableString (SIZE(8))
+}
+
+LOGINRESP ::= SEQUENCE {
+  sucesso BOOLEAN,
+  sessao INTEGER
+}
+
+END
