@@ -8,7 +8,7 @@ class Context {
  protected:
   State * estado;
  public:
-  Context(State * inicio) : estado(inicio) {}
+  Context(State * inicio) : estado{inicio} {}
  
   virtual ~Context() {}
  
