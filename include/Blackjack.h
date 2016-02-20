@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include <ProtoServidorAPI.h>
+#include "../include/ProtoServidorAPI.h"
 
 class Blackjack: public Jogo {
 public:

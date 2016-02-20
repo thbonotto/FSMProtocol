@@ -1,9 +1,10 @@
 // as classes concretas que implementam os estados da MEF
+#include "../include/States.h"
+
 #include <iostream>
 
-#include "States.h"
-#include "Events.h"
-#include "Timeout.h"
+#include "../include/Events.h"
+#include "../include/Timeout.h"
 
 State0 * State0::_instance{nullptr};
 State1 * State1::_instance{nullptr};

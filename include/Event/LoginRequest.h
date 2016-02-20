@@ -6,7 +6,7 @@
  */
 
 #pragma once 
-#include "Event.h"
+#include "../../include/Event/Event.h"
 
 class LoginRequest : public Event {
 public:

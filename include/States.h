@@ -1,8 +1,9 @@
 #pragma once
+
 <<<<<<< HEAD
-#include "Event/Event.h"
+#include "../include/Event/Event.h"
 =======
-#include "Events.h"
+#include "../include/Events.h"
 #include <mutex>
 >>>>>>> branch 'master' of https://github.com/thbonotto/FSMProtocol
 // A class abstrata que representa um estado

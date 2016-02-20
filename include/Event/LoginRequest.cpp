@@ -5,7 +5,7 @@
  *      Author: thiago.b
  */
 
-#include "../Event/LoginRequest.h"
+#include "../../include/Event/LoginRequest.h"
 
 LoginRequest::LoginRequest() {
 	// TODO Auto-generated constructor stub

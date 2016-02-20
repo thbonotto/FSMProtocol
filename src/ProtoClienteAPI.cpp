@@ -5,7 +5,7 @@
  *      Author: aluno
  */
 
-#include "ProtoClienteAPI.h"
+#include "../include/ProtoClienteAPI.h"
 
 ProtoClienteAPI::ProtoClienteAPI(const string & IP, int port) {
 	// TODO Auto-generated constructor stub

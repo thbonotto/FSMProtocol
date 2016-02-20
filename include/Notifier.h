@@ -7,7 +7,7 @@
 
 #ifndef NOTIFIER_H_
 #define NOTIFIER_H_
-#include "ProtoClienteAPI.h"
+#include "../include/ProtoClienteAPI.h"
 
 class Notifier : public NotifyCallback{
 public:

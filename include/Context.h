@@ -1,8 +1,8 @@
 #pragma once
 
 // A classe Context é a parte visível da MEF
-#include <States.h>
-#include "Event.h"
+#include "../include/Event/Event.h"
+#include "../include/States.h"
 
 class Context {
  protected:

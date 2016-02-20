@@ -11,7 +11,7 @@
 #include <string>
 #include <map>
 
-#include "ProtoServidorAPI.h"
+#include "../include/ProtoServidorAPI.h"
 
 class Testador : public Jogo{
 public:
