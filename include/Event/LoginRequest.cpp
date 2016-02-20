@@ -5,14 +5,14 @@
  *      Author: thiago.b
  */
 
-#include "../../include/Event/LoginRequest.h"
-
-LoginRequest::LoginRequest() {
-	// TODO Auto-generated constructor stub
-
-}
-
-LoginRequest::~LoginRequest() {
-	// TODO Auto-generated destructor stub
-}
+//#include "../../include/Event/LoginRequest.h"
+//
+//LoginRequest::LoginRequest() {
+//	// TODO Auto-generated constructor stub
+//
+//}
+//
+//LoginRequest::~LoginRequest() {
+//	// TODO Auto-generated destructor stub
+//}
 

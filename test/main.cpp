@@ -21,6 +21,8 @@ int main(int argc, char** argv) {
     
     protocolo.serve_forever();
     
+    jogo.login("user","pass");
+
     return 0;
 }
 

@@ -20,10 +20,12 @@ enum Codigos_Retorno {
 };
 
 // um par atributo, valor, usado para as trocas de dados entre entidades do protocolo
-struct Par {
-  string atributo;
-  string valor;
-};
+//struct Par {
+//  string atributo;
+//  string valor;
+//};
+
+typedef std::pair<std::string,std::string> Par;
 
 // Uma classe abstrata para implementar um objeto-função. Isso pode ser usado para
 // implementar o callback para recebimento de notificações (notify)

@@ -5,13 +5,13 @@
  *      Author: thiago.b
  */
 
-#pragma once 
-#include "../../include/Event/Event.h"
-
-class LoginRequest : public Event {
-public:
-	LoginRequest();
-	virtual ~LoginRequest();
-};
+//#pragma once
+//#include "Event/Events.h"
+//
+//class LoginRequest : public Event {
+//public:
+//	LoginRequest();
+//	virtual ~LoginRequest();
+//};
 
 /* EVENTS_LOGINREQUEST_H_ */

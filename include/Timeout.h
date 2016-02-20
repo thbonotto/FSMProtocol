@@ -8,9 +8,12 @@
 #pragma once
 #include <exception>
 class TimeoutException : public std::exception {
- public:
-
-};
+	public:
+	virtual const char* what() const throw()
+	  {
+	    return "Timeout happened";
+	  }
+} timeoutex;
 
 /// Selector
 
@@ -25,13 +28,15 @@ class TimeoutException : public std::exception {
 
 using namespace std;
 
-int timeout() {
+void timeout() {
   cout << "Este programa mostra como limitar o tempo de espera para que ";
   cout << "se tecle alguma coisa ..." << endl;
 
   cout << endl << "Esperando que se tecle ENTER ... " ;
   cout.flush();
-
+ /**
+  * Select our socket descriptor
+  */
   int fd = 0; // o descritor 0 corresponde à entrada padrão ...
 
   struct timeval timeout; // para especificar o timeout
@@ -43,7 +48,7 @@ int timeout() {
   FD_SET(fd, &espera);
 
   if (select(1, &espera, NULL, NULL, &timeout) == 0) { // timeout !!
-    cout << "Timeout !" << endl;
+    throw timeoutex;
   } else {
     cout << "Algo foi teclado ..." << endl;
   }

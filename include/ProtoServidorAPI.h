@@ -12,6 +12,8 @@
 
 using namespace std;
 
+typedef std::pair<std::string,std::string> Par;
+
 // Classe abstrata que serve de base para a implementação de um jogo ...
 // Ela serve para implementar as operações do jogo do ponto de vista do protocolo
 class Jogo {

@@ -5,7 +5,7 @@
  *      Author: aluno
  */
 
-#include "../include/ProtoServidorAPI.h"
+#include "ProtoServidorAPI.h"
 
 ProtoServidorAPI::ProtoServidorAPI(const string & IP, int port, Jogo & umJogo) {
 	// TODO Auto-generated constructor stub

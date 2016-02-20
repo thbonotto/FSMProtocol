@@ -5,7 +5,7 @@
  *      Author: aluno
  */
 
-#include "../include/Blackjack.h"
+#include "Blackjack.h"
 
 Blackjack::~Blackjack() {
 	// TODO Auto-generated destructor stub
